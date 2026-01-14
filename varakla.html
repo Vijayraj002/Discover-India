@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Discover India</title>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="nav-logo">
+            <div class="logo">
+                <h2>Discover!India</h2>
+            </div>
+        </div>
+       <ul class="nav-links ">
+                <li><a href="front.html" class="active">Home</a></li>
+                <li><a href="Destination.html">Destinations</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="btn-account">
+            <button class="btn btn-primary" >Login</button>
+        
+            <button class="btn btn-outline-info">Sign Up</button>
+        </div>
+       <!---- <div class="varakla-box1">
+            <div class="varkla-img-baner">
+                 <img src="varkala baner3.png">
+            </div>
+           
+        </div>
+
+        <div class="varakla-box1">
+    <div class="varkla-img-baner">-->
+
+        <div class="slider">
+    <img src="img1.jpg" class="active">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+
+    
+
+</div>
+<button class="arrow left" onclick="prev()">❮</button>
+    <button class="arrow right" onclick="next()">❯</button>
+
+<script>
+const slides = document.querySelectorAll(".slider img");
+let index = 0;
+
+function show(i){
+    slides.forEach(img => img.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+function next(){
+    index = (index + 1) % slides.length;
+    show(index);
+}
+
+function prev(){
+    index = (index - 1 + slides.length) % slides.length;
+    show(index);
+}
+
+/* Auto slide */
+setInterval(next, 5000);
+</script>
+
+<div class="varkla-box2">
+    
+</div>

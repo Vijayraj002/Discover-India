@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    color: aliceblue;
+    display: flex;
+}
+.nav-logo{
+    width: 200px;
+    height: 50px;
+}
+.logo{
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.destination{
+    font-size: 18px;
+    margin-left: 200px;
+}
+.nav-links{
+    display: flex;
+    justify-items:space-evenly;
+}
+.nav-links {
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+            color: aliceblue;
+            justify-content: center;
+            margin-left: 100px;
+            font-size: 18px;
+        }
+.nav-links li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: 500;
+            transition: color 0.3s;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+            color: #FF6B35;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.box1,
+.box2,
+.box3 {
+    position: relative;
+    z-index: 1;
+}
+.box1-video video {
+    pointer-events: none;
+}
+.btn-account{
+    width: 250px;
+    justify-content: space-evenly;
+}
+.text{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box1{
+     height: 900px;
+}
+.box1-video{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    margin-left: px;
+}
+.box2{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+}
+.box2-img{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+}
+.box2-img img {
+    pointer-events: none;
+}
+.box3{
+    height: 1040px;
+    width: 1513px;
+    background-color: rgb(169, 167, 166);
+    text-align: center;
+    position: relative;
+}
+.box3 h1{
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #000000;
+}
+.box3 h4{
+    font-size: 40px;
+}
+.template{
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    
+    scroll-behavior: smooth;
+    gap: 35px;
+   }
+.box{
+     flex: 0 0 300px; 
+    width: 300px;
+    height: 550px;
+    border-color: rgb(173, 26, 26);
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-size: cover;
+    transition: 0.2s;
+    position: relative; 
+    overflow: hidden;
+    
+  
+}
+ .slidebox{
+    background-size: cover;
+    }
+ 
+.box:hover {
+        transform: translateY(-50px);
+}
+.slide-box{
+    border-radius: 20px;
+     text-decoration: none;
+}
+.slide-text{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 6px;
+}
+.slide-btn {
+    position: absolute;
+    bottom: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+    opacity: 0;                 
+    pointer-events: none;       
+    transition: opacity 0.3s ease;
+    transform: translateX(-50%) translateY(10px);
+   }
+.box:hover .slide-text {
+    transform: translateY(-35px);
+}
+.box:hover .slide-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(-10px);
+}
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.nav-btn {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 10px 14px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+.slider-window {
+    padding: 0 90px;
+    overflow: hidden;
+}
+.template::-webkit-scrollbar {
+    display: none;
+}  
+.slider-nav {
+    margin-top: 30px;      
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.exploremore-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.box1{
+    width: 1513px;
+    height: 800px;
+}
+.slide-video{
+    width: 900px;
+    margin: auto;
+}.navbar{
+    position: sticky;
+    top: 0;
+   }
+.box2-img {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+/* Image */
+.box2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.8s ease-in-out;
+}
+/* Dark overlay */
+.box2-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+/* Text above overlay */
+.box2-img h1,
+.box2-img h3,
+.img-text,
+.box2-btn,
+.slide-arrow {
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+/* Heading */
+.box2-img h1 {
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 800;
+}
+.box2-img h3 {
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+/* City name */
+.img-text {
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Button */
+.box2-btn {
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Arrows */
+.slide-arrow {
+   bottom: 120px;  
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.slide-arrow.left {
+    left: 45%;
+    transform: translateX(-80px);
+}
+.slide-arrow.right {
+    left: 55%;
+    transform: translateX(30px);
+}
+.slide-arrow:hover {
+    background: rgba(0,0,0,0.8);
+}
+.box4{
+    height: 800px;
+    background-color: beige;
+    margin-top: 10px;
+}
+
+
+.box4-img{
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    background:#dbc9b7;
+
+}
+
+
+
+
+/* Destination*/
+.destination-box2{
+    height: 700px;
+}
+
+
+
+
+
+/*kerala*/
+.kerala-box2{
+   
+    width: 100%;
+    color: #000000;
+}
+
+
+/*varakla*/
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Images */
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Active image */
+.slider img.active {
+    opacity: 1;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+  top: 700px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.arrow.left { left: 45%; }
+.arrow.right { right: 45%; }
+
+.arrow:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.varkla-box2{
+    height: 700px;
+    background-color: #dbc9b7;
+
+}
+
