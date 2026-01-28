@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Discover India</title>
 </head>
 <body>
@@ -24,8 +24,8 @@
         </ul>
         <div class="btn-account">
             <button type="button" class="btn btn-primary" >Login</button>
-        
-            <button type="button" class="btn btn-outline-info">Sign Up</button>
+            <a href="/register" action="/register" method="get">
+            <button type="button" class="btn btn-outline-info">Sign Up</button></a>
         </div>
         
     </div>
@@ -33,7 +33,7 @@
         <div class="box1-video">
         
             <video  autoplay muted loop>
-                <source src="public/Untitled (1450 x 800 px) (1500 x 800 px) (1510 x 800 px) (1512 x 800 px) (1513 x 800 px) (1515 x 800 px) (1514 x 800 px).mp4" type="video/mp4">
+                <source src="../images/Untitled (1450 x 800 px) (1500 x 800 px) (1510 x 800 px) (1512 x 800 px) (1513 x 800 px) (1515 x 800 px) (1514 x 800 px).mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -73,18 +73,20 @@
 </div>
            <script>
 const slides = [
-    { img: "public/front.jpg", city: "Udaipur", link: "udaipur.html" },
-    { img: "public/jaipur.jpg", city: "Jaipur", link: "jaipur.html" },
-    { img: "public/varanasi.jpg", city: "Varanasi", link: "varanasi.html" },
-    { img: "public/img2.jpg", city: "Kerala", link: "kerala.html" },
-    { img: "public/goa.jpg", city: "Goa", link: "goa.html" },
-    { img: "public/tawang.jpg", city: "Tawang", link: "tawang.html" },
-    { img: "public/rameshwaram.jpg", city: "Tamilnadu", link: "rameshwaram.html" },
-    { img: "public/lakshdwip.jpg", city: "Lakshadweep", link: "lakshadweep.html" },
-    { img: "public/amritser.jpg", city: "Amritsar", link: "amritsar.html" },
-    { img: "public/himachal.jpg", city: "Himachal", link: "himachal.html" },
-    { img: "public/leh2.jpg", city: "Leh", link: "leh.html" }
+    { img: "../images/front.jpg", city: "Udaipur", link: "udaipur.html" },
+    { img: "../images/jaipur1.jpg", city: "Jaipur", link: "jaipur.html" },
+    { img: "../images/varanasi.jpg", city: "Varanasi", link: "varanasi.html" },
+    { img: "../images/img2.jpg", city: "Kerala", link: "kerala.html" },
+    { img: "../images/goa.jpg", city: "Goa", link: "goa.html" },
+    { img: "../images/tawang.webp", city: "Tawang", link: "tawang.html" },
+    { img: "../images/rameshwaram.jpg", city: "Tamilnadu", link: "rameshwaram.html" },
+    { img: "../images/lakshadwip.wepb", city: "Lakshadweep", link: "lakshadweep.html" },
+    { img: "../images/amritser.jpg", city: "Amritsar", link: "amritsar.html" },
+    { img: "../images/himachal.jpg", city: "Himachal", link: "himachal.html" },
+    { img: "../images/leh2.jpg", city: "Leh", link: "leh.html" }
 ];
+
+
 
 let index = 0;
 
@@ -119,7 +121,7 @@ setInterval(nextSlide, 10000);
 showSlide(index);
 </script>
 
-    <div class="box3">
+    <!-- <div class="box3">
         <h1>ATTRACTIONS</h1>
         <h4>---BEYOND THE IMAGINATION---</h4>
     
@@ -132,7 +134,7 @@ showSlide(index);
         
        
         <a href="hava.html" class="slide box">
-            <img src="public/Untitled design1.png">
+            <img src="C:\Users\vijay\OneDrive\Desktop\Discover india\public/Untitled design1.png">
             <div class="slide-text">Hava Mahal</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
@@ -140,7 +142,7 @@ showSlide(index);
         </a>
 
         <a href="rohtang" class="slide box">
-            <img src="public/rohtang pass.png">
+            <img src="/rohtang pass.png">
             <div class="slide-text">Rohtang Pass</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
@@ -148,7 +150,7 @@ showSlide(index);
         </a>
 
         <a href="mumbai" class="slide box">
-            <img src="public/public\mumbai.png">
+            <img src="\public\mumbai.png">
             <div class="slide-text">Mumbai</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
@@ -156,28 +158,28 @@ showSlide(index);
         </a>
 
         <a href="taj mahal" class="slide box">
-            <img src="public/taj mahal.png">
+            <img src="C:\Users\vijay\OneDrive\Desktop\Discover india\public\taj mahal.png">
             <div class="slide-text">Taj Mahal</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
             </div>
         </a>
         <a href="taj mahal" class="slide box">
-            <img src="public/taj mahal.png">
+            <img src="C:\Users\vijay\OneDrive\Desktop\Discover india\public/taj mahal.png">
             <div class="slide-text">Taj Mahal</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
             </div>
         </a>
         <a href="taj mahal" class="slide box">
-            <img src="public/taj mahal.png">
+            <img src="C:\Users\vijay\OneDrive\Desktop\Discover india\public/taj mahal.png">
             <div class="slide-text">Taj Mahal</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
             </div>
         </a>
         <a href="taj mahal" class="slide box">
-            <img src="public/taj mahal.png">
+            <img src="C:\Users\vijay\OneDrive\Desktop\Discover india\public/taj mahal.png">
             <div class="slide-text">Taj Mahal</div>
             <div class="slide-btn">
                 <button class="btn btn-danger">Explore</button>
@@ -228,10 +230,10 @@ showSlide(index);
         </div>
 
     </div>
-    <div class="slider-nav">
+     
         <button class="nav-btn left" onclick="slide(-1)">❮</button>
     <button class="nav-btn right" onclick="slide(1)">❯</button>
-    </div>
+    
     <div class="exploremore-btn">
     <button type="button" class="btn btn-danger">Explore more</button>
     </div>
@@ -254,7 +256,69 @@ showSlide(index);
             slide(1);
         }
     }, 5000);
+</script> -->
+<div class="box3">
+    <h1>ATTRACTIONS</h1>
+    <h4>---BEYOND THE IMAGINATION---</h4>
+
+    <div class="slider-wrapper">
+        <div class="slider-window">
+            <div class="template" id="slider"></div>
+        </div>
+
+        <button class="nav-btn left" onclick="slide(-1)">❮</button>
+        <button class="nav-btn right" onclick="slide(1)">❯</button>
+
+        <div class="exploremore-btn">
+            <button type="button" class="btn btn-danger">Explore more</button>
+        </div>
+    </div>
+</div>
+<script>
+const places = [
+  { name: "Hawa Mahal", img: "../images/Untitled design1.png", link: "hava.html" },
+  { name: "Rohtang Pass", img: "../images/rohtang pass.png", link: "rohtang.html" },
+  { name: "Mumbai", img: "../images/mumbai.png", link: "mumbai.html" },
+  { name: "rohtang", img: "../images/rohtang pass.png", link: "taj-mahal.html" },
+  { name: "Taj Mahal", img: "../images/taj mahal.png", link: "taj-mahal.html" },
+  { name: "Taj Mahal", img: "../images/taj-mahal.png", link: "taj-mahal.html" },
+   { name: "Taj Mahal", img: "../images/taj-mahal.png", link: "taj-mahal.html" },
+    { name: "Taj Mahal", img: "../images/taj-mahal.png", link: "taj-mahal.html" }
+];
+
+const slider = document.getElementById("slider");
+
+// create slides dynamically
+places.forEach(place => {
+  slider.innerHTML += `
+    <a href="${place.link}" class="slide box">
+        <img src="${place.img}" alt="${place.name}">
+        <div class="slide-text">${place.name}</div>
+        <div class="slide-btn">
+            <button class="btn btn-danger">Explore</button>
+        </div>
+    </a>
+  `;
+});
+
+// slider logic
+const slideBox = document.querySelector(".box");
+const gap = 30;
+
+function slide(direction) {
+    const slideWidth = slideBox.offsetWidth + gap;
+    slider.scrollLeft += direction * slideWidth;
+}
+
+setInterval(() => {
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+        slider.scrollLeft = 0;
+    } else {
+        slide(1);
+    }
+}, 5000);
 </script>
+
 <div class="box4">
     <div class="box4-img">
         <img src="public/map2.png">
